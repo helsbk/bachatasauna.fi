@@ -9,10 +9,10 @@
   if (artistsRow) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        if (entry.intersectionRatio === 0) {
-          entry.target.querySelector('video')?.pause();
-        } else {
+        if (entry.isIntersecting) {
           entry.target.querySelector('video')?.play();
+        } else {
+          entry.target.querySelector('video')?.pause();
         }
   
         if (entry.intersectionRatio === 1.0) {
@@ -30,7 +30,13 @@
         1.0,
       ],
     });
-  
-    document.querySelectorAll('.artists-thumb').forEach(e => observer.observe(e));
+
+    artistsRow.querySelectorAll('.artists-thumb').forEach(thumb => {
+      observer.observe(thumb);
+
+      const video = thumb.querySelector('video');
+      video?.addEventListener('mouseup', () => video.play());
+      video?.addEventListener('touchend', () => video.play());
+    });
   }
 })(window.jQuery);
