@@ -1,0 +1,105 @@
+{% extends "_head.html" %}
+
+{% block body %}
+<body>
+  <main>
+    <div class="sticky-helper"></div>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          BACHATA SAUNA
+        </a>
+
+        <a href="javascript://" onclick="TTWidget.loadEvent('helsinkisbk', 1445046, 'widget');" class="btn custom-btn text-nowrap d-xl-none ms-auto me-4">Buy Ticket</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-xl-center ms-auto me-lg-5">
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/#artists">Artists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/#venue">Venue</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/#tickets">Tickets</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/schedule">Schedule</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/social-competition">Competition</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/hotel">Hotel</a>
+            </li>
+          </ul>
+
+          <a href="javascript://" onclick="TTWidget.loadEvent('helsinkisbk', 1445046, 'widget');" class="glow-on-hover btn custom-btn text-nowrap d-xl-block d-none">Buy Ticket</a>
+        </div>
+      </div>
+      <div class="backdrop-edge"></div>
+    </nav>
+
+    {% block content %}{% endblock content %}
+</body>
+
+<footer class="site-footer">
+  <div class="site-footer-top">
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 col-12 mb-4 pb-2">
+        <div class="social-icon">
+          <a href="https://www.facebook.com/events/476461991951843" target="_blank" class="social-icon-link">
+            <span class="bi-facebook"></span>
+          </a>
+          <a href="https://www.instagram.com/bachatasauna" target="_blank" class="social-icon-link">
+            <span class="bi-instagram"></span>
+          </a>
+        </div>
+
+        <br>
+
+        <p class="copyright-text">Copyright © 2025 Helsinki Bachateando ry<br><a href="https://store.hbry.fi/page/privacy-policy" class="site-footer-link">Privacy Policy</a></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+        <h5 class="site-footer-title mb-3">Contact us</h5>
+
+        <p class="d-flex mb-1">
+          WhatsApp: +358 46 801 0967
+        </p>
+        <p class="d-flex mb-1">
+          <a href="https://www.instagram.com/bachatasauna" target="_blank" class="site-footer-link">Instagram: @bachatasauna</a>
+        </p>
+        <p class="d-flex mb-1">
+          Email: contact (ät) helsbk.org
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+        <h5 class="site-footer-title mb-3">Location</h5>
+
+        <p class="d-flex mt-3 mb-2">
+          <a href="https://maps.app.goo.gl/E97DHiac9Whh5whX9" target="_blank" class="site-footer-link">Cirko<br>Kaasutehtaankatu 1<br>00540 Helsinki, Finland</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock body %}
