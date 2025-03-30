@@ -517,7 +517,7 @@ strong {
   outline: none;
 }
 
-.custom-form button[type="submit"] {
+.custom-form button {
   background: var(--custom-btn-bg-color);
   border: none;
   border-radius: var(--border-radius-large);
@@ -528,8 +528,8 @@ strong {
   margin-bottom: 0;
 }
 
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
+.custom-form button:hover,
+.custom-form button:focus {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
 }
