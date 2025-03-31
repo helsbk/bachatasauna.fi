@@ -382,29 +382,32 @@
 {% block content_end %}
 <script>
 (function () {
-  const artistsRow = document.querySelector('.artists-row');
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
+  const documentVisibilityObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      console.log('isIntersecting', entry.intersectionRatio)
       if (entry.isIntersecting) {
         entry.target.querySelector('video')?.play();
       } else {
         entry.target.querySelector('video')?.pause();
       }
+   });
+  }, {
+    threshold: [0, 0.01],
+  });
 
+  const artistsRow = document.querySelector('.artists-row');
+  const rowVisibilityObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
       entry.target.classList.toggle('visible', entry.intersectionRatio === 1.0);
     });
   }, {
     root: artistsRow,
-    threshold: [
-      0,
-      0.01,
-      0.99,
-      1.0,
-    ],
+    threshold: [0.99, 1.0],
   });
 
   artistsRow.querySelectorAll('.artists-thumb').forEach(thumb => {
-    observer.observe(thumb);
+    documentVisibilityObserver.observe(thumb);
+    rowVisibilityObserver.observe(thumb);
 
     const video = thumb.querySelector('video');
     video?.addEventListener('mouseup', () => video.play());
