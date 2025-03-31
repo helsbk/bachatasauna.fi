@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}Bachata Sauna Festival</title>
 
-  <link href="/css/bootstrap.min.css?v={{ get_hash(path='static/css/bootstrap.min.css', sha_type=256) | slugify }}" rel="stylesheet">
-  <link href="/css/style.css?v={{ get_hash(path='static/css/style.css', sha_type=256) | slugify }}" rel="stylesheet">
+  <link href="/css/bundle.css?v={{ get_hash(path='sass/css/_style.scss') | slugify }}-{{ get_hash(path='sass/css/bundle.scss') | slugify }}" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="google" value="notranslate">
