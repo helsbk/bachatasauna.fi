@@ -18,7 +18,5 @@
 
 {% block body %}{% endblock body %}
 
-<script src="/js/jquery.min.js?v={{ get_hash(path='static/js/jquery.min.js', sha_type=256) | slugify }}"></script>
-<script src="/js/bootstrap.min.js?v={{ get_hash(path='static/js/bootstrap.min.js', sha_type=256) | slugify }}"></script>
 <script src="/js/custom.js?v={{ get_hash(path='static/js/custom.js', sha_type=256) | slugify }}"></script>
 <script src="https://cdn.tickettailor.com/js/TTWidget.js" async></script>
