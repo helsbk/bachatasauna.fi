@@ -29,6 +29,11 @@
       const video = thumb.querySelector('video');
       video?.addEventListener('mouseup', () => video.play());
       video?.addEventListener('touchend', () => video.play());
+
+      // Seek to same frame as `poster`.
+      video?.addEventListener('loadedmetadata', () => {
+        video.currentTime = 0.10;
+      }, { once: true });
     });
   }
 
