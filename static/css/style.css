@@ -604,14 +604,6 @@ strong {
     font-size: 20px;
   }
 
-  .navbar-expand-xl .navbar-nav {
-    padding-bottom: 30px;
-  }
-
-  .navbar-expand-xl .navbar-nav .nav-link {
-    padding: 0;
-  }
-
   .pricing-thumb {
     padding: 35px;
   }
@@ -621,6 +613,15 @@ strong {
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
+  }
+
+  .navbar-nav .custom-btn  {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0;
   }
 }
 
