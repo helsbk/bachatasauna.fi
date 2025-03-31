@@ -44,7 +44,7 @@
     <div class="row flex-nowrap overflow-scroll artists-row">
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/ofir-ofri.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/ofir-ofri.mp4?v=2" type="video/mp4">
           </video>
 
@@ -62,7 +62,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/irene-tomas.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/irene-tomas.mp4?v=2" type="video/mp4">
           </video>
 
@@ -80,7 +80,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/kornel-catharine.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/kornel-catharine.mp4?v=2" type="video/mp4">
           </video>
 
@@ -98,7 +98,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/owen-eva.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/owen-eva.mp4?v=2" type="video/mp4">
           </video>
 
@@ -116,7 +116,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/jeremy-forma.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/jeremy-forma.mp4?v=2" type="video/mp4">
           </video>
 
@@ -134,7 +134,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/sorush-elise.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/sorush-elise.mp4?v=2" type="video/mp4">
           </video>
 
@@ -152,7 +152,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/erik-katinka.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/erik-katinka.mp4?v=2" type="video/mp4">
           </video>
 
@@ -170,7 +170,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/gregory-karolina.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/gregory-karolina.mp4?v=2" type="video/mp4">
           </video>
 
@@ -188,7 +188,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/ash-leni.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/ash-leni.mp4?v=2" type="video/mp4">
           </video>
 
@@ -206,7 +206,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/pinja-sibel.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/pinja-sibel.mp4?v=2" type="video/mp4">
           </video>
 
@@ -224,7 +224,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/niklas-noora.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/niklas-noora.mp4?v=2" type="video/mp4">
           </video>
 
@@ -242,7 +242,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/villehart.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/villehart.mp4?v=2" type="video/mp4">
           </video>
 
@@ -260,7 +260,7 @@
 
       <div class="artists-item">
         <div class="artists-thumb">
-          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="video/sanna.jpg">
+          <video preload="none" loop muted playsInline class="custom-video artists-video" poster="images/poster.png">
             <source src="video/sanna.mp4?v=2" type="video/mp4">
           </video>
 
@@ -412,11 +412,6 @@
     const video = thumb.querySelector('video');
     video?.addEventListener('mouseup', () => video.play());
     video?.addEventListener('touchend', () => video.play());
-
-    // Seek to same frame as `poster`.
-    video?.addEventListener('loadedmetadata', () => {
-      video.currentTime = 0.10;
-    }, { once: true });
   });
 })();
 </script>
