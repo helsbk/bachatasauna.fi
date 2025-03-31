@@ -40,11 +40,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
-/*---------------------------------------
-  TYPOGRAPHY               
------------------------------------------*/
-
 h2,
 h3,
 h4,
@@ -255,9 +250,6 @@ strong {
   color: var(--white-color);
 }
 
-/*---------------------------------------
-  NAVIGATION              
------------------------------------------*/
 .sticky-helper {
   display: block;
   position: sticky;
@@ -325,7 +317,7 @@ strong {
   border: 0;
   padding: 0;
   cursor: pointer;
-  margin: 0;
+  margin: 0 20px 0 0;
   width: 30px;
   height: 35px;
   outline: none;
