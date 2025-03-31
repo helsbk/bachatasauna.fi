@@ -378,3 +378,43 @@
   </div>
 </section>
 {% endblock content %}
+
+{% block content_end %}
+<script>
+(function () {
+  const artistsRow = document.querySelector('.artists-row');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.querySelector('video')?.play();
+      } else {
+        entry.target.querySelector('video')?.pause();
+      }
+
+      entry.target.classList.toggle('visible', entry.intersectionRatio === 1.0);
+    });
+  }, {
+    root: artistsRow,
+    threshold: [
+      0,
+      0.01,
+      0.99,
+      1.0,
+    ],
+  });
+
+  artistsRow.querySelectorAll('.artists-thumb').forEach(thumb => {
+    observer.observe(thumb);
+
+    const video = thumb.querySelector('video');
+    video?.addEventListener('mouseup', () => video.play());
+    video?.addEventListener('touchend', () => video.play());
+
+    // Seek to same frame as `poster`.
+    video?.addEventListener('loadedmetadata', () => {
+      video.currentTime = 0.10;
+    }, { once: true });
+  });
+})();
+</script>
+{% endblock content_end %}

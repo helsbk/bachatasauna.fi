@@ -98,4 +98,15 @@
     </div>
   </div>
 </footer>
+
+<script>
+document.querySelectorAll('.navbar-collapse a').forEach(e => e.addEventListener('click', () => toggleMenu()));
+
+function toggleMenu() {
+  document.getElementById("navbarNav")?.classList.toggle('show');
+  document.getElementById("navbarToggler")?.classList.toggle('open');
+}
+</script>
+{% block content_end %}{% endblock content_end %}
+
 {% endblock body %}
