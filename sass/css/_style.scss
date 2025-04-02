@@ -20,7 +20,7 @@
 
 :root {
   --white-color:#ffffff;
-  --halfwhite-color:#aaaaaa;
+  --halfwhite-color:#909090;
   --primary-color:#F8CB2E;
   --secondary-color:#EE5007;
   --section-bg-color:#111111;
@@ -182,7 +182,7 @@ b, strong {
 }
 
 .section-padding {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 70px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -470,10 +470,10 @@ b, strong {
 }
 
 .pricing-thumb {
-  border: 3px dashed var(--halfwhite-color);
+  border: 2px dashed var(--halfwhite-color);
   border-radius: var(--border-radius-small);
   position: relative;
-  padding: 40px;
+  padding: 30px 35px;
 }
 
 .custom-form {
@@ -558,6 +558,10 @@ b, strong {
 }
 
 @media screen and (max-width: 1199px) {
+  .section-padding {
+    scroll-margin-top: 40px;
+  }
+
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
