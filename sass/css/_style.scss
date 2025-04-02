@@ -52,6 +52,7 @@
 body {
   background-color: var(--black-color);
   scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 
 body.modal-open {
