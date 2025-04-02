@@ -78,7 +78,7 @@
     width: calc(100% - 20px);
     height: calc(100% - 70px);
     border-radius: 8px;
-    background-color: white;
+    background: linear-gradient(180deg, #fff 0%, #fff 50%, #333 50%, #333 100%);
   }
 
   #tt-close {
