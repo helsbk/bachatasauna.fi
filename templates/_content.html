@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="javascript://" onclick="TTWidget.loadEvent('helsinkisbk', 1445046, 'widget');" class="btn custom-btn ms-xl-4 text-nowrap">Buy Ticket</a>
+              <a href="javascript://" onclick="openTicketTailor()" class="btn custom-btn ms-xl-4 text-nowrap">Buy Ticket</a>
             </li>
           </ul>
         </div>
@@ -98,12 +98,40 @@
   </div>
 </footer>
 
+<div id="tt-container">
+  <div id="tt-overlay"></div>
+  <iframe id="tt-iframe" src="" title="Checkout" frameborder="0" role="dialog"></iframe>
+  <div id="tt-spinner" class="spinner-border text-white" role="status"></div>
+  <svg id="tt-close" onclick="closeTicketTailor()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+  </svg>
+</div>
+
 <script>
 document.querySelectorAll('.navbar-collapse a').forEach(e => e.addEventListener('click', () => toggleMenu()));
 
 function toggleMenu() {
   document.getElementById("navbarNav")?.classList.toggle('show');
   document.getElementById("navbarToggler")?.classList.toggle('open');
+}
+
+function openTicketTailor() {
+  document.body.classList.add('modal-open');
+  document.getElementById('tt-container').classList.add('show');
+
+  const iframe = document.getElementById('tt-iframe');
+  if (!iframe.src) {
+    iframe.src = 'https://www.tickettailor.com/events/helsinkisbk/1445046/book?ref=widget&modal_widget=true&widget=true';
+    iframe.addEventListener('load', () => {
+      iframe.classList.add('loaded');
+      document.getElementById('tt-spinner').classList.add('loaded');
+    });
+  }
+}
+
+function closeTicketTailor() {
+  document.body.classList.remove('modal-open');
+  document.getElementById('tt-container').classList.remove('show');
 }
 </script>
 {% block content_end %}{% endblock content_end %}

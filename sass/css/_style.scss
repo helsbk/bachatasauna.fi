@@ -54,6 +54,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h2, h3, h4, h5, h6 {
   color: var(--white-color);
 }
