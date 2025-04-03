@@ -384,7 +384,6 @@
 (function () {
   const documentVisibilityObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      console.log('isIntersecting', entry.intersectionRatio)
       if (entry.isIntersecting) {
         entry.target.querySelector('video')?.play();
       } else {
