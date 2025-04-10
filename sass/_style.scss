@@ -207,29 +207,43 @@ b, strong {
 }
 
 .section-padding {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 50px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
+nav + .section-padding {
+  padding-top: 90px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    scroll-margin-top: 100px;
+  }
+
+  nav + .section-padding {
+    padding-top: 150px;
+  }
+}
+
 .section-bg {
-  background-color: var(--section-bg-color);
+  background: linear-gradient(180deg, hsl(40, 92%, 4%) 0%, hsl(40, 92%, 2%) 90%, var(--black-color) 100%);
 }
 
 .section-bg-1 {
-  background: linear-gradient(180deg, hsl(15, 92%, 2%) 0%, hsl(40, 92%, 7%) 100%);
+  background: linear-gradient(180deg, hsl(15, 92%, 2%) 0%, hsl(40, 92%, 4%) 100%);
 }
 
 .section-bg-2 {
-  background: linear-gradient(180deg, hsl(40, 92%, 7%) 0%, hsl(30, 92%, 5%) 100%);
+  background: linear-gradient(180deg, hsl(40, 92%, 4%) 0%, hsl(30, 92%, 5%) 100%);
 }
 
 .section-bg-3 {
-  background: linear-gradient(180deg, hsl(30, 92%, 5%) 0%, hsl(20, 92%, 7%) 100%);
+  background: linear-gradient(180deg, hsl(30, 92%, 5%) 0%, hsl(20, 92%, 4%) 100%);
 }
 
 .section-bg-4 {
-  background: linear-gradient(180deg, hsl(20, 92%, 7%) 0%, hsl(10, 92%, 3%) 90%, var(--black-color) 100%);
+  background: linear-gradient(180deg, hsl(20, 92%, 4%) 0%, hsl(10, 92%, 3%) 90%, var(--black-color) 100%);
 }
 
 .custom-btn {
@@ -264,18 +278,6 @@ b, strong {
 .custom-btn-bg-white {
   border-color: var(--white-color);
   color: var(--white-color);
-}
-
-.sticky-helper {
-  display: block;
-  position: sticky;
-  height: 40px;
-}
-
-@media screen and (min-width: 1200px) {
-  .sticky-helper {
-    height: 70px;
-  }
 }
 
 .navbar {
@@ -409,6 +411,7 @@ b, strong {
   position: relative;
   overflow: hidden;
   height: calc(min(80vw, 700px));
+  margin-top: 30px;
 }
 
 .about-section {
@@ -620,10 +623,6 @@ b, strong {
 }
 
 @media screen and (max-width: 1199px) {
-  .section-padding {
-    scroll-margin-top: 40px;
-  }
-
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
