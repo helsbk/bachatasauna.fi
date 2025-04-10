@@ -615,10 +615,6 @@ nav + .section-padding {
   .hero-section {
     background-image: image-set('/images/bsbg-1024@2x.avif' 2x type('image/avif'), '/images/bsbg-1024.avif' 1x type('image/avif'), '/images/bsbg-1024.jpg' type('image/jpeg'));
   }
-
-  .pricing-thumb {
-    padding: 35px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
