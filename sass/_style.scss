@@ -589,22 +589,16 @@ nav + .section-padding {
   opacity: 0.3;
 }
 
-.social-icon-link-ig {
+.social-icon-link-ig,
+.social-icon-link-fb {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
 }
 
 .social-icon-link-fb {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px;
   background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23fff%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20d%3D%22M16%208.049c0-4.446-3.582-8.05-8-8.05C3.58%200-.002%203.603-.002%208.05c0%204.017%202.926%207.347%206.75%207.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017%201.195-3.131%203.022-3.131.876%200%201.791.157%201.791.157v1.98h-1.009c-.993%200-1.303.621-1.303%201.258v1.51h2.218l-.354%202.326H9.25V16c3.824-.604%206.75-3.934%206.75-7.951%22%2F%3E%0A%3C%2Fsvg%3E%0A');
 }
 
