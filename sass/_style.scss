@@ -507,9 +507,7 @@ b, strong {
 }
 
 .header-venue {
-  color: transparent;
-  background: linear-gradient(180deg, hsla(40, 92%, 90%, 1) 0%, hsla(30, 92%, 40%, 0.81) 100%);
-  background-clip: text;
+  color: $yellow-200;
   font-weight: 600;
 }
 
@@ -533,15 +531,11 @@ b, strong {
 }
 
 .pass-finland {
-  background: linear-gradient(90deg, color.scale(#003580, $lightness: 90%) 0%, color.scale(#003580, $lightness: 80%) 100%);
-  background-clip: text;
-  color: transparent;
+  color: $blue-200;
 }
 
 .pass-international {
-  background: linear-gradient(90deg, color.scale(#00800d, $lightness: 90%) 0%, color.scale(#00800d, $lightness: 80%) 100%);
-  background-clip: text;
-  color: transparent;
+  color: $green-200;
 }
 
 .custom-form {
