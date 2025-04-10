@@ -507,8 +507,9 @@ b, strong {
 }
 
 .header-venue {
-  color: $yellow-200;
-  font-weight: 600;
+  color: $yellow-100;
+  font-weight: 300;
+  letter-spacing: 2%;
 }
 
 .pricing-thumb {
@@ -516,10 +517,6 @@ b, strong {
   border-radius: var(--border-radius-small);
   position: relative;
   padding: 30px 35px;
-}
-
-.header-pass {
-  color: var(--custom-btn-bg-hover-color)
 }
 
 .price-header {
