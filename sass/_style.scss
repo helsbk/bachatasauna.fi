@@ -24,7 +24,7 @@ $primary-color: #F8CB2E;
 
 :root {
   --white-color:#ffffff;
-  --halfwhite-color:#909090;
+  --halfwhite-color:#707070;
   --primary-color:#F8CB2E;
   --section-bg-color:#111111;
   --custom-btn-bg-color:#b75200;
@@ -165,8 +165,10 @@ h6 {
 }
 
 .img-fluid,
-.header-index {
-  filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.7));
+.header-index,
+.artists-thumb,
+.pricing-thumb {
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.7));
 }
 
 p, ul li {
@@ -509,16 +511,27 @@ nav + .section-padding {
   }
 }
 
-.header-venue {
-  color: $yellow-100;
+.badge {
+  display: inline-block;
+  text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2%;
+  margin-bottom: 12px;
+  margin-right: 6px;
+  padding: 10px 12px;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 
+.badge,
 .pricing-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px dashed var(--halfwhite-color);
   border-radius: var(--border-radius-small);
+}
+
+.pricing-thumb {
   position: relative;
   padding: 25px 30px;
 }
