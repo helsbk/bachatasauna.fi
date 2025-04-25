@@ -629,6 +629,7 @@ $navbar-toggler-width: 30px;
     margin-bottom: 0;
     background-image: url('/images/bsbg-1024.webp?v=2');
     background-image: image-set('/images/bsbg-1024@2x.avif?v=2' 2x type('image/avif'), '/images/bsbg-1024.avif?v=2' 1x type('image/avif'), '/images/bsbg-1024@2x.webp?v=2' 2x type('image/webp'), '/images/bsbg-1024.webp?v=2' 1x type('image/webp'));
+    height: calc(min(98vw, 750px));
   }
 }
 
