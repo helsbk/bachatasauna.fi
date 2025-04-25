@@ -403,8 +403,8 @@ nav + .section-padding {
 }
 
 .hero-section {
-  background-image: url('/images/bsbg-2048.webp');
-  background-image: image-set('/images/bsbg-2048@2x.avif' 2x type('image/avif'), '/images/bsbg-2048.avif' 1x type('image/avif'), '/images/bsbg-2048@2x.webp' 2x type('image/webp'), '/images/bsbg-2048.webp' 1x type('image/webp'));
+  background-image: url('/images/bsbg-2048.webp?v=2');
+  background-image: image-set('/images/bsbg-2048@2x.avif?v=2' 2x type('image/avif'), '/images/bsbg-2048.avif?v=2' 1x type('image/avif'), '/images/bsbg-2048@2x.webp?v=2' 2x type('image/webp'), '/images/bsbg-2048.webp?v=2' 1x type('image/webp'));
   background-color: var(--black-color);
   background-repeat: no-repeat;
   background-size: cover;
@@ -622,8 +622,8 @@ nav + .section-padding {
 @media screen and (max-width: 991px) {
   .hero-section {
     margin-top: 20px;
-    background-image: url('/images/bsbg-1024.webp');
-    background-image: image-set('/images/bsbg-1024@2x.avif' 2x type('image/avif'), '/images/bsbg-1024.avif' 1x type('image/avif'), '/images/bsbg-1024@2x.webp' 2x type('image/webp'), '/images/bsbg-1024.webp' 1x type('image/webp'));
+    background-image: url('/images/bsbg-1024.webp?v=2');
+    background-image: image-set('/images/bsbg-1024@2x.avif?v=2' 2x type('image/avif'), '/images/bsbg-1024.avif?v=2' 1x type('image/avif'), '/images/bsbg-1024@2x.webp?v=2' 2x type('image/webp'), '/images/bsbg-1024.webp?v=2' 1x type('image/webp'));
   }
 }
 
