@@ -5,7 +5,7 @@
   <main>
     <nav class="navbar navbar-expand-xl">
       <div class="container justify-content-start">
-        <button class="navbar-toggler me-4" id="navbarToggler" type="button" onclick="toggleMenu()">
+        <button class="navbar-toggler" id="navbarToggler" type="button" onclick="toggleMenu()">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -88,8 +88,10 @@
 document.querySelectorAll('.navbar-collapse a').forEach(e => e.addEventListener('click', () => toggleMenu()));
 
 function toggleMenu() {
-  document.getElementById("navbarNav")?.classList.toggle('show');
-  document.getElementById("navbarToggler")?.classList.toggle('open');
+  const navbarNav = document.getElementById("navbarNav");
+  const shown = navbarNav?.classList.toggle('show');
+  document.getElementById("navbarToggler")?.classList.toggle('open', shown);
+  document.body.classList.toggle('menu-open', shown);
 }
 
 function openTicketTailor() {

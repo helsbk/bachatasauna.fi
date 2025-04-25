@@ -58,7 +58,8 @@ body {
   touch-action: manipulation;
 }
 
-body.modal-open {
+body.modal-open,
+body.menu-open {
   overflow: hidden;
 }
 
@@ -338,14 +339,17 @@ nav + .section-padding {
   }
 }
 
+$navbar-toggler-width: 30px;
+
 .navbar-toggler {
   border: 0;
   padding: 0;
   cursor: pointer;
   margin: 0;
-  width: 30px;
+  width: $navbar-toggler-width;
   height: 35px;
   outline: none;
+  margin-right: $spacer * 1.5;
 
   &:focus {
     outline: none;
@@ -622,6 +626,7 @@ nav + .section-padding {
 @media screen and (max-width: 991px) {
   .hero-section {
     margin-top: 20px;
+    margin-bottom: 0;
     background-image: url('/images/bsbg-1024.webp?v=2');
     background-image: image-set('/images/bsbg-1024@2x.avif?v=2' 2x type('image/avif'), '/images/bsbg-1024.avif?v=2' 1x type('image/avif'), '/images/bsbg-1024@2x.webp?v=2' 2x type('image/webp'), '/images/bsbg-1024.webp?v=2' 1x type('image/webp'));
   }
@@ -634,15 +639,19 @@ nav + .section-padding {
 }
 
 @media screen and (max-width: 1199px) {
-  .custom-btn {
-    font-size: 14px;
-    padding: 8px 16px;
+  .navbar {
+    .custom-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
   }
 
   .navbar-nav {
     .nav-link {
-      padding: 0 0 0 14px;
+      padding: 0;
     }
+
+    padding-left: calc($navbar-toggler-width + $spacer * 1.5);
   }
 
   .navbar-collapse {
@@ -654,6 +663,14 @@ nav + .section-padding {
     &.show {
       max-height: 99em;
       transition: max-height 1.0s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .navbar {
+    .custom-btn {
+      display: none;
     }
   }
 }
