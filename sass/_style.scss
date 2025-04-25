@@ -266,14 +266,14 @@ nav + .section-padding {
 
 .custom-border-btn {
   background: transparent;
-  border: 2px solid var(--custom-btn-bg-color);
-  color: var(--custom-btn-bg-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
-.navbar-expand-xl .navbar-nav .nav-link.custom-btn:hover, .custom-border-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+.custom-border-btn:hover {
+  background: var(--primary-color);
   border-color: transparent;
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .custom-btn-bg-white {
@@ -636,17 +636,12 @@ nav + .section-padding {
 @media screen and (max-width: 1199px) {
   .custom-btn {
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 8px 16px;
   }
 
   .navbar-nav {
-    .custom-btn {
-      margin-top: 20px;
-      margin-bottom: 8px;
-    }
-
     .nav-link {
-      padding: 0;
+      padding: 0 0 0 14px;
     }
   }
 
