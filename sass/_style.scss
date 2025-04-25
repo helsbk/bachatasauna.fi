@@ -58,8 +58,7 @@ body {
   touch-action: manipulation;
 }
 
-body.modal-open,
-body.menu-open {
+body.modal-open {
   overflow: hidden;
 }
 
