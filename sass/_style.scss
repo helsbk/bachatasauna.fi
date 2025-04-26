@@ -247,7 +247,7 @@ nav + .section-padding {
   background: linear-gradient(180deg, hsl(20, 92%, 6%) 0%, hsl(10, 92%, 3%) 90%, var(--black-color) 100%);
 }
 
-.custom-btn {
+.custom-btn, .custom-btn:hover {
   background: var(--custom-btn-bg-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -266,7 +266,7 @@ nav + .section-padding {
   }
 }
 
-.custom-border-btn {
+.custom-border-btn, .custom-border-btn:hover {
   background: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
