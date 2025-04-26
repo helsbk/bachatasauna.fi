@@ -342,6 +342,17 @@ nav + .section-padding {
   }
 }
 
+@media screen and (max-height: 400px) {
+  .navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: 10px;
+  }
+}
+
 $navbar-toggler-width: 30px;
 
 .navbar-toggler {
