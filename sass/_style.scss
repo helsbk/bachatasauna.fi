@@ -257,8 +257,10 @@ nav + .section-padding {
   line-height: normal;
   transition: all 0.3s;
   padding: 10px 20px;
+}
 
-  &:hover {
+@media (hover) {
+  .custom-btn:hover {
     background: var(--custom-btn-bg-hover-color);
     color: var(--white-color);
   }
@@ -270,10 +272,12 @@ nav + .section-padding {
   color: var(--primary-color);
 }
 
-.custom-border-btn:hover {
-  background: var(--primary-color);
-  border-color: transparent;
-  color: var(--black-color);
+@media (hover) {
+  .custom-border-btn:hover {
+    background: var(--primary-color);
+    border-color: transparent;
+    color: var(--black-color);
+  }
 }
 
 .custom-btn-bg-white {
