@@ -25,4 +25,4 @@ find ./public -name 'index.html' -mindepth 2 -type f \
 
 find ./public -empty -type d -delete
 
-./minify -r -i ./public
+./minify --quiet --js-version=2017 --recursive --inplace ./public
