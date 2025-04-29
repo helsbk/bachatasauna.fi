@@ -293,6 +293,7 @@ nav + .section-padding {
   font-family: var(--heading-font-family);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.65) 100%);
   backdrop-filter: blur(16px);
+  filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.8));
   z-index: 9;
   touch-action: none;
 }
@@ -431,6 +432,7 @@ $navbar-toggler-width: 30px;
   overflow: hidden;
   height: calc(min(80vw, 750px));
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .about-section {
