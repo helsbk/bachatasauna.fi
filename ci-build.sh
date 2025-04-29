@@ -10,7 +10,11 @@ DART_SASS_VERSION=1.86.2
 wget --quiet "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
 tar xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
 
-./dart-sass/sass --quiet --style=compressed --no-source-map -I sass sass/bundle.scss:static/css/bundle.css
+MINIFY_VERSION=2.23.2
+wget --quiet "https://github.com/tdewolff/minify/releases/download/v${MINIFY_VERSION}/minify_linux_amd64.tar.gz"
+tar xf "minify_linux_amd64.tar.gz"
+
+./dart-sass/sass --quiet --no-source-map -I sass sass/bundle.scss:static/css/bundle.css
 
 ./zola build
 
@@ -20,3 +24,5 @@ find ./public -name 'index.html' -mindepth 2 -type f \
   find-sh {} \;
 
 find ./public -empty -type d -delete
+
+./minify_linux_amd64/minify -r -i ./public
