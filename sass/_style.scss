@@ -375,9 +375,9 @@ $navbar-toggler-width: 30px;
     background: transparent;
 
     &:before, &:after {
-      transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-      transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-      transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+      transition: top 200ms 50ms ease, -webkit-transform 200ms 250ms ease;
+      transition: top 200ms 50ms ease, transform 200ms 250ms ease;
+      transition: top 200ms 50ms ease, transform 200ms 250ms ease, -webkit-transform 200ms 250ms ease;
       top: 0;
     }
 
@@ -392,16 +392,16 @@ $navbar-toggler-width: 30px;
 
   .navbar-toggler-icon {
     background: var(--white-color);
-    transition: background 10ms 300ms ease;
+    transition: background 10ms 200ms ease;
     display: block;
     width: 30px;
     height: 2px;
     position: relative;
 
     &:before, &:after {
-      transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-      transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-      transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+      transition: top 200ms 250ms ease, -webkit-transform 200ms 50ms ease;
+      transition: top 200ms 250ms ease, transform 200ms 50ms ease;
+      transition: top 200ms 250ms ease, transform 200ms 50ms ease, -webkit-transform 200ms 50ms ease;
       position: absolute;
       right: 0;
       left: 0;
