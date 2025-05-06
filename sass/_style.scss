@@ -331,17 +331,13 @@ nav + .section-padding {
   }
 }
 
-.navbar-expand-xl .navbar-nav .nav-link {
-  border-radius: var(--border-radius-large);
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-nav .nav-link {
   display: inline-block;
   color: var(--white-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
   position: relative;
+  margin: 10px 15px 10px 0;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -734,6 +730,11 @@ $navbar-toggler-width: 30px;
 
 @media screen and (max-width: 1199px) {
   .navbar {
+    .navbar-nav {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
     .custom-btn {
       font-size: 14px;
       padding: 6px 12px;
@@ -742,7 +743,7 @@ $navbar-toggler-width: 30px;
 
   .navbar-nav {
     .nav-link {
-      padding: 0;
+      margin: 0;
     }
 
     padding-left: calc($navbar-toggler-width + $spacer * 1.5);
