@@ -187,7 +187,7 @@ a {
   color: #4aabff;
   text-decoration: none;
 
-  &:hover {
+  &:hover, &:focus {
     color: #93cdff;
   }
 }
@@ -323,7 +323,7 @@ nav + .section-padding {
   font-weight: 800;
   letter-spacing: 2%;
 
-  &:hover {
+  &:hover, &:focus {
     color: var(--white-color);
     font-size: var(--h5-font-size);
     font-weight: 800;
