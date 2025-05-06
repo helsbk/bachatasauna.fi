@@ -166,7 +166,8 @@ h6 {
 
 .img-fluid,
 .header-index,
-.pricing-thumb {
+.pricing-thumb,
+.schedule-item {
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.7));
 }
 
@@ -193,6 +194,12 @@ a {
 
 b, strong {
   font-weight: var(--font-weight-bold);
+}
+
+.list-group-item {
+  color: var(--p-color);
+  background-color: transparent;
+  border: 1px solid rgba(209, 213, 219, 0.2);
 }
 
 .icon {
@@ -228,7 +235,7 @@ nav + .section-padding {
 }
 
 .section-bg {
-  background: linear-gradient(180deg, hsl(40, 92%, 5%) 0%, hsl(40, 92%, 2%) 90%, var(--black-color) 100%);
+  background: linear-gradient(180deg, hsl(25, 92%, 5%) 0%, hsl(25, 92%, 2%) calc(min(50vh, 400px)), var(--black-color) 100%);
 }
 
 .section-bg-1 {
@@ -569,6 +576,67 @@ $navbar-toggler-width: 30px;
 
 .pass-international {
   color: $green-200;
+}
+
+.schedule-list {
+  width: 100%;
+  padding: 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+  padding-left: 12px;
+  margin-top: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--border-radius-small);
+  height: 70px;
+}
+
+.schedule-p {
+  background: linear-gradient(120deg, #290834 20%, transparent 105%);
+  border-color: color.scale(#290834, $lightness: 5%);
+  height: 95px;
+}
+
+.schedule-l1 {
+  background: linear-gradient(120deg, #083409 20%, transparent 105%);
+  border-color: color.scale(#083409, $lightness: 5%);
+}
+
+.schedule-l2 {
+  background: linear-gradient(120deg, #082d35 20%, transparent 105%);
+  border-color: color.scale(#082d35, $lightness: 5%);
+}
+
+.schedule-m {
+  background: linear-gradient(120deg, #35080d 20%, transparent 105%);
+  border-color: color.scale(#35080d, $lightness: 5%);
+}
+
+.schedule-c {
+  background: linear-gradient(120deg, #353508 20%, transparent 105%);
+  border-color: color.scale(#353508, $lightness: 5%);
+}
+
+.schedule-title {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.schedule-time {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.schedule-image {
+  margin-top: -14px;
+  width: 72px;
+  height: 72px;
 }
 
 .custom-form {
