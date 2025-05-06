@@ -434,8 +434,8 @@ $navbar-toggler-width: 30px;
   position: relative;
   overflow: hidden;
   height: calc(min(80vw, 750px));
+  margin-top: 6px;
   margin-bottom: 20px;
-  margin-top: 10px;
 }
 
 .about-section {
@@ -714,11 +714,16 @@ $navbar-toggler-width: 30px;
 
 @media screen and (max-width: 991px) {
   .hero-section {
-    margin-top: 20px;
     margin-bottom: 0;
     background-image: url('/images/bsbg-1024.webp?v=2');
     background-image: image-set('/images/bsbg-1024@2x.avif?v=2' 2x type('image/avif'), '/images/bsbg-1024.avif?v=2' 1x type('image/avif'), '/images/bsbg-1024@2x.webp?v=2' 2x type('image/webp'), '/images/bsbg-1024.webp?v=2' 1x type('image/webp'));
-    height: calc(min(98vw, 750px));
+    height: calc(min(100vw, 750px));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    margin-top: 12px;
   }
 }
 
