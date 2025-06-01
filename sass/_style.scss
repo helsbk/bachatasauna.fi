@@ -31,7 +31,7 @@ $primary-color: #F8CB2E;
   --custom-btn-bg-hover-color:#be5600;
   --dark-color:#111111;
   --black-color:#000000;
-  --p-color:#eeeeee;
+  --p-color:#ddd;
   --border-color:#7fffd4;
   --link-hover-color:#F8CB2E;
   --heading-font-family:'Red Hat Display', sans-serif;
@@ -172,7 +172,7 @@ h6 {
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.7));
 }
 
-p, ul li {
+p, ol li, ul li {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
